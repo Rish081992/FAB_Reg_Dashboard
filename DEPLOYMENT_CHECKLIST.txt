@@ -1,0 +1,29 @@
+FAB STREAMLIT APP - CLIENT DEPLOYMENT CHECKLIST
+
+1. Confirm target platform
+   - Azure App Service / container hosting
+   - Streamlit in Snowflake
+
+2. Confirm access model
+   - open internal review only
+   - Microsoft Entra ID / SSO
+   - Snowflake role-based access
+
+3. Confirm data model for hosted version
+   - keep demo in-memory data
+   - or connect to persistent database
+
+4. Confirm required hardening
+   - logging
+   - monitoring
+   - private networking
+   - secrets storage
+   - CI/CD
+
+5. Confirm run command
+   - Azure: use startup.sh or Dockerfile
+   - Snowflake: update snowflake.yml and deploy via Snowflake CLI
+
+6. Confirm production scope
+   - prototype review only
+   - or phase-1 working internal application

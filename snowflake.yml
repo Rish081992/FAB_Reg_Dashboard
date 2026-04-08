@@ -1,0 +1,6 @@
+definition_version: 1
+streamlit:
+  name: fab_reg_reporting_prototype
+  stage: fab_streamlit_stage
+  query_warehouse: FAB_APP_WH
+  main_file: app.py
